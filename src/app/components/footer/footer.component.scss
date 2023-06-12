@@ -1,0 +1,18 @@
+.footer {
+  background-image: url('/assets/images/footer-bg-img.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  font-size: 18px;
+  font-weight: 500;
+
+  a {
+    color: #000;
+  }
+
+  @media (min-width: 1024px) {
+    height: 600px;
+  }
+
+}
