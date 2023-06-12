@@ -1,0 +1,15 @@
+.about-us {
+  &__img {
+    background-image: url('/assets/images/about-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 285px;
+    margin-top: 30px;
+
+    @media (min-width: 1024px) {
+      background-size: cover;
+      height: 1250px;
+    }
+  }
+}

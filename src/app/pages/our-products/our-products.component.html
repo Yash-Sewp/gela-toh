@@ -1,9 +1,57 @@
 <section class="our-products">
-  <div class="container">
+  <div class="container-fluid p-0">
     <div class="row">
       <div class="col-12">
-        Our Products here!
+        <div class="banner__product-img">
+          <img src="/assets/images/products-img.png" alt="Our products">
+          <a [routerLink]="['/']" data-aos="fade-up" class="btn primary"><span>Order Now</span> <i class="bi bi-arrow-right-short"></i></a>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-title img="null" warning="Not suitable for children younger than 18" tagLine="Minimum order quantity is 40+" heading="Our products" subHeading="The gelatoh creme liqueur ice cream and cakes." content="We manufacture and sell a varity of alcoholic ice cream flours and birthday/wedding cakes."></app-title>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mx-auto">
+        <app-card img="/assets/images/op-2.png" title="Salted caramel and coconut" color="9aba6c"></app-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <app-double-card animation="fade-right" titleOne="Marula creme liqueur" titleTwo="Strawberry creme liqueur" img="/assets/images/op-3.png" colorOne="f1d844" colorTwo="eeb6ab"></app-double-card>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <app-double-card animation="fade-left" titleOne="Rum and raspberry liqueur" titleTwo="Spiked hazelnut liqueur" img="/assets/images/op-4.png" colorOne="79414f" colorTwo="8d7158"></app-double-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <app-double-card animation="fade-right" titleOne="Smashed chocolate whiskey liqueur" titleTwo="Russian vodka shot" img="/assets/images/op-5.png" colorOne="8e7873" colorTwo="53c2ca"></app-double-card>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <app-double-card animation="fade-left" titleOne="Tipsy nougat" titleTwo="Milk tart booze" img="/assets/images/op-6.png" colorOne="426282" colorTwo="d78758"></app-double-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6 mx-auto">
+        <app-double-card animation="fade-up" titleOne="Malva pudding and marshmallow" titleTwo="Gin" img="/assets/images/op-7.png" colorOne="93817a" colorTwo="000000"></app-double-card>
+       </div>
+    </div>
+  </div>
+
+  <app-subscribe></app-subscribe>
+
 </section>

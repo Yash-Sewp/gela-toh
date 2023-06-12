@@ -1,0 +1,35 @@
+.welcome {
+  &__img-container {
+    img {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &__card {
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-img {
+    img {
+      margin: 0 auto 15px;
+      display: block;
+      object-position: center;
+      width: auto;
+      height: 108px;
+      object-fit: contain;
+    }
+  }
+
+  &__card-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+}

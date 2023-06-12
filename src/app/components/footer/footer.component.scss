@@ -1,18 +1,94 @@
 .footer {
-  background-image: url('/assets/images/footer-bg-img.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 70px;
+
+  @media (min-width: 1024px) {
+    margin-top: 130px;
+  }
 
   a {
     color: #000;
   }
 
-  @media (min-width: 1024px) {
-    height: 600px;
+  ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+      justify-content: unset;
+    }
   }
 
+  &__social-container {
+    li {
+      margin: 0 15px;
+      transition: all 0.5s;
+
+      &:hover {
+        i {
+          color: #f79b8a;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    i {
+      font-size: 25px;
+    }
+  }
+
+  &__quick-links {
+    ul {
+      display: block;
+      text-align: center;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        text-align: unset;
+      }
+    }
+
+    li {
+      margin: 20px 0;
+      transition: all 0.5s;
+
+      @media (min-width: 1024px) {
+        margin: 0 40px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        a {
+          font-weight: bold;
+          color: #f79b8a;
+        }
+      }
+
+      a {
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__bg {
+    background-image: url("/assets/images/footer-bg-img.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+
+    @media (min-width: 1024px) {
+      height: 600px;
+    }
+  }
 }

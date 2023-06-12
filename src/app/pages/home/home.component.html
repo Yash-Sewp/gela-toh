@@ -2,8 +2,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img src="/assets/images/home-banner-img.png" alt="">
+        <div class="banner__product-img">
+          <img data-aos="fade-up" src="/assets/images/home-banner-img.png" alt="">
+          <a [routerLink]="['/']" data-aos="fade-up" class="btn primary"><span>Order Now</span> <i class="bi bi-arrow-right-short"></i></a>
+        </div>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-title img="/assets/images/title-img.png" warning="Not suitable for children younger than 18" tagLine="Minimum order quantity is 40+" heading="Welcome" subHeading="The gelatoh creme liqueur ice cream and cakes." content="We manufacture and sell a varity of alcoholic ice cream flours and birthday/wedding cakes."></app-title>
+      </div>
+    </div>
+  </div>
+  <app-welcome></app-welcome>
+  <app-testimonial></app-testimonial>
+  <app-subscribe></app-subscribe>
 </section>

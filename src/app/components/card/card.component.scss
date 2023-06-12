@@ -1,0 +1,30 @@
+.card {
+  border: none;
+
+  &__img {
+    img {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: 44%;
+    margin: 20px auto;
+    line-height: 26px;
+  }
+
+  &__color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+}

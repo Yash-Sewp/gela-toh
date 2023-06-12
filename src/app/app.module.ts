@@ -13,6 +13,12 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { OurProductsComponent } from './pages/our-products/our-products.component';
 import { EventsComponent } from './pages/events/events.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { TitleComponent } from './components/title/title.component';
+import { CardComponent } from './components/card/card.component';
+import { DoubleCardComponent } from './components/double-card/double-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     AboutUsComponent,
     OurProductsComponent,
     EventsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    WelcomeComponent,
+    SubscribeComponent,
+    TestimonialComponent,
+    TitleComponent,
+    CardComponent,
+    DoubleCardComponent
   ],
   imports: [
     BrowserModule,

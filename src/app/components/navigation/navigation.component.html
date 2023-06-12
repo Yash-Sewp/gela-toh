@@ -1,9 +1,12 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="openNav()" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbar__mobile">
+      <div href="javascript:void(0)" class="d-block d-lg-none navbar__close-btn" (click)="closeNav()">
+        <i class="bi bi-x-lg"></i>
+      </div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/']">Home</a>
@@ -26,7 +29,7 @@
   <div class="container navbar__logo-container">
     <div class="row mx-auto">
       <div class="col-12 col-lg-12">
-        <img src="/assets/images/logo.png" alt="">
+        <img data-aos="fade-up" src="/assets/images/logo.png" alt="">
       </div>
     </div>
   </div>
