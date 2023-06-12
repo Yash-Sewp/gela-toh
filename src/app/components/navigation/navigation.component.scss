@@ -44,6 +44,12 @@
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    &.active {
+      .nav-link {
+        font-weight: bold;
+      }
+    }
   }
 
   .nav-link {
