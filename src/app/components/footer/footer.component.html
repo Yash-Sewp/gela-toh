@@ -30,10 +30,10 @@
       <div class="col-12 col-lg-9 justify-content-end d-lg-flex">
         <div class="footer__quick-links">
           <ul>
-            <li><a [routerLink]="['/']">Home</a></li>
-            <li><a [routerLink]="['about-us']">About Us</a></li>
-            <li><a [routerLink]="['our-products']">Our Products</a></li>
-            <li><a [routerLink]="['contact-us']">Contact Us</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['home']">Home</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['about-us']">About Us</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['our-products']">Our Products</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['contact-us']">Contact Us</a></li>
           </ul>
         </div>
       </div>
