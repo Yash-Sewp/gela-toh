@@ -1,9 +1,46 @@
-<section class="contact">
+<section class="contact-us overflow-hidden">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        Contact here!
+        <div class="banner__product-img">
+          <img data-aos="fade-up" src="/assets/images/contact-us-img.png" alt="">
+          <a [routerLink]="['/contact-us']" data-aos="fade-up" class="btn primary"><span>Order Now</span> <i class="bi bi-arrow-right-short"></i></a>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-title img="null" warning="Not suitable for children younger than 18" tagLine="Minimum order quantity is 40+" heading="Contact us" subHeading="gelatoh creme liqueur ice cream and cakes." content=""></app-title>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8 col-lg-6 mx-auto">
+        <div class="contact-us__details">
+          <div class="contact-us__row">
+            <i class="bi bi-geo-alt"></i>
+            <div class="contact-us__content">gelatoh creme liqueur ice cream and cakes</div>
+          </div>
+
+          <div class="contact-us__row">
+            <i class="bi bi-phone"></i>
+            <a href="tel:+27847363160" class="contact-us__content">+27 84 736 3160</a>
+          </div>
+
+          <div class="contact-us__row">
+            <i class="bi bi-envelope"></i>
+            <a href = "mailto: info@gelatoh.co.za" class="contact-us__content">Info@gelatoh.co.za</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-subscribe></app-subscribe>
+
 </section>

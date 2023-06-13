@@ -1,4 +1,11 @@
 .our-products {
+
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    overflow: unset;
+  }
+
   .banner__product-img {
     height: 600px;
     position: relative;

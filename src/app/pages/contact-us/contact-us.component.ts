@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos'; //AOS - 1
 
 @Component({
   selector: 'app-contact-us',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
+  ngOnInit() {
+    AOS.init();
+  }
 
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      AOS.refresh()
+    }, 500)
+  }
 }
