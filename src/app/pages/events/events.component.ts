@@ -14,7 +14,7 @@ export class EventsComponent {
   ngOnInit() {
     AOS.init();
     this.title.setTitle('Events');
-    this.meta.updateTag({ name: 'description', content: 'GelaToh crème liqueur ice cream and cakes is a registered black female owned and managed company. GelaToh is the first company to manufacture and supply its own branded alcoholic ice cream. We manufacture and sell a varity of alcoholic ice cream flours and birthday/wedding cakes.' });
+    this.meta.updateTag({ name: 'description', content: 'GelaToh crème liqueur ice cream and cakes is a registered black female owned and managed company. GelaToh is the first company to manufacture and supply its own branded alcoholic ice cream. We manufacture and sell a variety of alcoholic ice cream flavours and birthday/wedding cakes.' });
     const analytics = getAnalytics();
     logEvent(analytics, 'page_title', { page_title: 'Events' });
   }
